@@ -43,7 +43,8 @@ inquirer.prompt([
     // THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
     type: "list",
     message: "Choose a license for my application",
-    choices: ["MIT", ""]
+    choices: ["MIT", "GNU", "Creative Commons"],
+    name: "license"
     },
     //enter my GitHub username
     // THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
@@ -56,7 +57,7 @@ inquirer.prompt([
     // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
     {
     type: "input",
-    message: "Enter your GitHub username",
+    message: "Enter your email address",
     name: "email"
     }
 ])
