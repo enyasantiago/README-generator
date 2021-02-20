@@ -43,7 +43,7 @@ const questions = [
     // THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
     type: "list",
     message: "Choose a license for my application",
-    choices: ["MIT", "GNU", "Creative Commons"],
+    choices: ["MIT", "Mozilla", "Apache", "none"],
     name: "license"
     },
     //enter my GitHub username
@@ -61,19 +61,6 @@ const questions = [
     name: "email"
     }
 ]
-
-// let readMeDetails = function readMeInfo(title, description, installation, usage, contributing, test, license, username, email)  {
-//     this.description = description;
-//     this.installation = installation;
-//     this.usage = usage;
-//     this.contributing = contributing;
-//     this.test = test;
-//     this.license = license;
-//     this.username = username;
-//     this.email = email;
-// }
-
-
 
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
