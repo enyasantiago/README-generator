@@ -2,10 +2,10 @@
 const inquirer = require ("inquirer");
 const fs = require ("fs");
 const generateMarkdown = require ("./utils/generateMarkdown");
-const { type } = require("os");
+
 
 // TODO: Create an array of questions for user input
-const questions = inquirer.prompt([
+const questions = [
     //enter a description, installation instructions, usage information, contribution guidelines, and test instructions
     // THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
     {
@@ -60,18 +60,18 @@ const questions = inquirer.prompt([
     message: "Enter your email address",
     name: "email"
     }
-])
+]
 
-let readMeDetails = function readMeInfo(title, description, installation, usage, contributing, test, license, username, email)  {
-    this.description = description;
-    this.installation = installation;
-    this.usage = usage;
-    this.contributing = contributing;
-    this.test = test;
-    this.license = license;
-    this.username = username;
-    this.email = email;
-}
+// let readMeDetails = function readMeInfo(title, description, installation, usage, contributing, test, license, username, email)  {
+//     this.description = description;
+//     this.installation = installation;
+//     this.usage = usage;
+//     this.contributing = contributing;
+//     this.test = test;
+//     this.license = license;
+//     this.username = username;
+//     this.email = email;
+// }
 
 
 
@@ -88,10 +88,11 @@ function writeToFile(fileName, data) {
 function init() 
 {
     inquirer
-        .prompt(questions)
-        .then(response => writeToFile("README.md", generateMarkdown(response)));
+    .prompt(questions)
+    .then(response => writeToFile("README.md", generateMarkdown(response)));
         
 }
+
 
 // Function call to initialize app
 init();
