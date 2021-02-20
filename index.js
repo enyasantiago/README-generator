@@ -1,11 +1,11 @@
 // TODO: Include packages needed for this application
 const inquirer = require ("inquirer");
 const fs = require ("fs");
+const generateMarkdown = require ("./utils/generateMarkdown");
 const { type } = require("os");
 
 // TODO: Create an array of questions for user input
-const questions = [];
-inquirer.prompt([
+const questions = inquirer.prompt([
     //enter a description, installation instructions, usage information, contribution guidelines, and test instructions
     // THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
     {
@@ -61,16 +61,37 @@ inquirer.prompt([
     name: "email"
     }
 ])
+
+let readMeDetails = function readMeInfo(title, description, installation, usage, contributing, test, license, username, email)  {
+    this.description = description;
+    this.installation = installation;
+    this.usage = usage;
+    this.contributing = contributing;
+    this.test = test;
+    this.license = license;
+    this.username = username;
+    this.email = email;
+}
+
+
+
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log('success'));
+}
 // TODO: Create a function to initialize app
-function init() {}
+function init() 
+{
+    inquirer
+        .prompt(questions)
+        .then(response => writeToFile("README.md", generateMarkdown(response)));
+        
+}
 
 // Function call to initialize app
 init();
