@@ -1,34 +1,34 @@
 
-  # r
+  # Project
   ## Description 
-  r
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#contributing)
+  * [Credits](#credits)
   * [Test](#test)
   * [License](#license)
-  * [Author](#username)
-  * [Email](#email)
+  * [Author](#author)
+ 
   
   ## Installation
-  r
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   
   ## Usage
-  r
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
   ## Credits
-  r
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
   ## Test
-  r
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
   ## License 
-  ![alt for img](https://img.shields.io/badge/license-MIT-green)
+  ![Mozilla License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
     
-  This project is licensed by [MIT](https://choosealicense.com/licenses/MIT)
+  This project is licensed by [Mozilla](https://choosealicense.com/licenses/mpl-2.0/)
 
   ## Author
-  [r](https://github.com/r)
-
-  r
+  [enyasantiago](https://github.com/enyasantiago)
+  
+  enya@email.com

@@ -4,11 +4,11 @@ function renderLicenseBadge(license) {
 
     switch (license) {
       case "MIT":
-        return `![alt for img](https://img.shields.io/badge/license-MIT-green)`;
+        return `![MIT License](https://img.shields.io/badge/license-MIT-green)`;
       case "Mozilla":
-        return `![alt for img](https://img.shields.io/badge/license-MIT-green)`;
+        return `![Mozilla License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`;
       case "Apache":
-        return `![alt for img](https://img.shields.io/badge/license-MIT-green)`;
+        return `![Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
       default:
         return ``;
     }
@@ -20,11 +20,11 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT":
-      return `[MIT](https://choosealicense.com/licenses/MIT)`;
+      return `This project is licensed by [MIT](https://choosealicense.com/licenses/MIT)`;
     case "Mozilla":
-      return `https://choosealicense.com/licenses/mpl-2.0/`;
+      return `This project is licensed by [Mozilla](https://choosealicense.com/licenses/mpl-2.0/)`;
     case "Apache":
-      return `https://choosealicense.com/licenses/apache-2.0/`;
+      return `This project is licensed by [Apache](https://choosealicense.com/licenses/apache-2.0/)`;
     default:
       return ``;
   }
@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
     return `## License 
   ${renderLicenseBadge(license)}
     
-  This project is licensed by ${renderLicenseLink(license)}`
+  ${renderLicenseLink(license)}`
   }
 }
 
@@ -52,11 +52,11 @@ function generateMarkdown(data) {
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#contributing)
+  * [Credits](#credits)
   * [Test](#test)
   * [License](#license)
-  * [Author](#username)
-  * [Email](#email)
+  * [Author](#author)
+ 
   
   ## Installation
   ${data.installation}
@@ -74,7 +74,7 @@ function generateMarkdown(data) {
 
   ## Author
   [${data.username}](https://github.com/${data.username})
-
+  
   ${data.email}
 `;
 }
