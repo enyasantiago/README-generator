@@ -15,11 +15,10 @@
  
   
   ## Installation
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  
-  ## Usage
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Run npm install. The application is invoked iwth node index.js. Inquirer will prompt the user for inputs from the command line.
 
+  ## Usage
+  Inquirer will prompt the user for your inputs from the command line. 
 
   ## License 
   ![MIT License](https://img.shields.io/badge/license-MIT-green)
